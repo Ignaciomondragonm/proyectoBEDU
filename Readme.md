@@ -62,3 +62,36 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 }]` 
 ---
    
+ ## 2: Planteamiento del problema 
+ ### - Añadir al menos otras cinco preguntas sobre la base de datos definida que apliquen los conceptos vistos durante la sesión (incluir el uso de: reconocimiento de patrones, funciones de agrupamiento, agrupamientos y subconsultas). 
+  
+ ## 3: Planteamiento del problema 
+ ### -Añadir al menos otras cinco preguntas a realizar a la base de datos.
+ ### -Incluir el uso de: llaves primarias, tipos de relaciones, relación de tablas mediante joins y creación de vistas.
+ ### -Crear al menos 5 vistas de preguntas más complejas (escribir en SQL para probarlas más adelante).
+## 4: Instalación de la base de datos
+ ### -Instalar el sistema gestor de bases de datos en un equipo (o en la nube en caso de MongoDB).
+ ### -Crear las tablas o colecciones necesarias para el proyecto.
+ ### -Ejecutar las consultas realizadas a lo largo de todos los postworks del módulo en el caso de MySQL. En caso de MongoDB, realizar en las siguientes sesiones.
+ ### -Guardar las consultas más relevantes como vistas. 
+## 5: Planteamiento del problema 
+ ### -Usar como base las preguntas definidas en el Postwork de la Sesión 1, reescribir las consultas usando JSON.
+ ### -Ejecutar usando MongoDB Compass. En cada caso, si el JSON corresponde a una proyección, filtro, ordenamiento o límite de resultados.
+## 6: Planteamiento del problema 
+### -Usar como base las preguntas definidas en el Postwork de la Sesión 1, reescribir las consultas usando JSON.
+### -Probar las consultas especificando en cada caso, si corresponde a una proyección, filtro, ordenamiento, límite de resultados o a una agregación.
+## 7: Planteamiento del problema 
+### -Usar como base las preguntas definidas en el Postwork de la Sesión 1, reescribir las consultas usando JSON.
+### -Probar en la instancia de MongoDB, recuerda especificar en cada caso, si el JSON corresponde a una proyección, filtro, ordenamiento, límite de resultados o a una agregación.
+## 8: Revisión final 
+### -Revisar todos los retos del módulo, terminar todos los retos faltantes.
+### -Usar el círculo de estudio para plantear dudas. 
+### -Llenar la plantilla para identificar el problema a resolver, analizar cómo resolver.
+
+
+   
+ 
+   
+   
+   
+   
