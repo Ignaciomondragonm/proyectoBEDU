@@ -15,7 +15,7 @@
 https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 
 ### - Dar forma a la base de datos y obtener información relevante.
-><img src="imagenes/punto2.jpg" align="center" height="500" width="500" hspace="10">
+<img src="imagenes/punto2.jpg" align="center" height="500" width="500" hspace="10">
 ### - Definir la forma de uso de los datos y problemas a resolver. 
 
 ### - Plantear diagrama de base de datos a utilizar (generarlo en MySQL Workbench).
