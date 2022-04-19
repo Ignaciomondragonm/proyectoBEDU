@@ -64,7 +64,43 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
    
  ## 2: Planteamiento del problema 
  ### - Añadir al menos otras cinco preguntas sobre la base de datos definida que apliquen los conceptos vistos durante la sesión (incluir el uso de: reconocimiento de patrones, funciones de agrupamiento, agrupamientos y subconsultas). 
-  
+  >- Obtener los diferentes precios de un modelo en especifico `FILTER {modelo:"c-hr xle sport utility 4d"} PROJECT {precio:1,modelo:1}` 
+  >- Obtener el maximo y minimo de precios de los diferentes modelos  `[{
+    $group: {
+        _id: '$modelo',
+        maxdist: {
+            $max: '$precio'
+        },
+        mindist: {
+            $min: '$precio'
+        }
+    }
+}]` 
+ >- Precio total de inventario por fabricante `[{
+    $group: {
+        _id: '$fabricante',
+        precioTotal: {
+            $sum: '$precio'
+        }
+    }
+}]` 
+ >- Obtener todas las regiones en donde se cuenta con sucursal `[{
+    $unwind: {
+        path: '$region',
+        includeArrayIndex: 'string',
+        preserveNullAndEmptyArrays: false
+    }
+}, {
+    $group: {
+        _id: null,
+        regiones: {
+            $addToSet: '$region'
+        }
+    }
+}]` 
+ 
+   
+   
  ## 3: Planteamiento del problema 
  ### -Añadir al menos otras cinco preguntas a realizar a la base de datos.
  ### -Incluir el uso de: llaves primarias, tipos de relaciones, relación de tablas mediante joins y creación de vistas.
@@ -89,7 +125,7 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 ### -Llenar la plantilla para identificar el problema a resolver, analizar cómo resolver.
 
 
-   
+   >-  `` 
  
    
    
