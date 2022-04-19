@@ -1,8 +1,8 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 5`
+[`Introducción a Bases de Datos`]`Sesión 5`
 
-## Sesión 5: Fundamentos de MongoDB
+## 1: Fundamentos de MongoDB
 
-<img src="../imagenes/pizarron.png" align="right" height="100" width="100" hspace="10">
+<img src="imagenes/bedu.jpg" align="right" height="100" width="100" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
