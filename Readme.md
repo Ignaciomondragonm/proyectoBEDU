@@ -98,26 +98,42 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
         }
     }
 }]` 
- 
+ >- Kilometraje promedio por modelo `[{
+    $group: {
+        _id: '$modelo',
+        media: {
+            $avg: '$odometro'
+        }
+    }
+}]` 
    
    
  ## 3: Planteamiento del problema 
  ### -Añadir al menos otras cinco preguntas a realizar a la base de datos.
+ >- Buscar modelos iguales o superiores del anio 2000, ordenando del mas reciente `FILTER {anio:{$gte:2000}} SORT {anio:-1}` 
+ >- Buscar modelos combustible igual a gas y transmision automatica `FILTER {combustible:"gas",transmision:"automatic"} SORT {odometro:-1}`
+ >- Buscar modelos entre el anio 200 y 2010, ordenando del mas reciente `FILTER {$and: [{anio: {$gte: 2000}},{anio: {$lte: 2010}}]} SORT {anio:-1}` 
+   
  ### -Incluir el uso de: llaves primarias, tipos de relaciones, relación de tablas mediante joins y creación de vistas.
  ### -Crear al menos 5 vistas de preguntas más complejas (escribir en SQL para probarlas más adelante).
-## 4: Instalación de la base de datos
+   
+ ## 4: Instalación de la base de datos
  ### -Instalar el sistema gestor de bases de datos en un equipo (o en la nube en caso de MongoDB).
+   ><img src="imagenes/serverlocal.jpg" align="center" height="500" width="500" hspace="10">
  ### -Crear las tablas o colecciones necesarias para el proyecto.
+   ><img src="imagenes/vistas.jpg" align="center" height="500" width="500" hspace="10">
  ### -Ejecutar las consultas realizadas a lo largo de todos los postworks del módulo en el caso de MySQL. En caso de MongoDB, realizar en las siguientes sesiones.
  ### -Guardar las consultas más relevantes como vistas. 
-## 5: Planteamiento del problema 
+   ><img src="imagenes/vistas.jpg" align="center" height="500" width="500" hspace="10">
+   
+ ## 5: Planteamiento del problema 
  ### -Usar como base las preguntas definidas en el Postwork de la Sesión 1, reescribir las consultas usando JSON.
  ### -Ejecutar usando MongoDB Compass. En cada caso, si el JSON corresponde a una proyección, filtro, ordenamiento o límite de resultados.
 ## 6: Planteamiento del problema 
-### -Usar como base las preguntas definidas en el Postwork de la Sesión 1, reescribir las consultas usando JSON.
+### -Usar como base las preguntas definidas en el Postwork de la Sesión 2, reescribir las consultas usando JSON.
 ### -Probar las consultas especificando en cada caso, si corresponde a una proyección, filtro, ordenamiento, límite de resultados o a una agregación.
 ## 7: Planteamiento del problema 
-### -Usar como base las preguntas definidas en el Postwork de la Sesión 1, reescribir las consultas usando JSON.
+### -Usar como base las preguntas definidas en el Postwork de la Sesión 3, reescribir las consultas usando JSON.
 ### -Probar en la instancia de MongoDB, recuerda especificar en cada caso, si el JSON corresponde a una proyección, filtro, ordenamiento, límite de resultados o a una agregación.
 ## 8: Revisión final 
 ### -Revisar todos los retos del módulo, terminar todos los retos faltantes.
