@@ -119,12 +119,12 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
    
  ## 4: Instalación de la base de datos
  ### -Instalar el sistema gestor de bases de datos en un equipo (o en la nube en caso de MongoDB).
-   ><img src="imagenes/serverlocal.jpg" align="center" height="500" width="500" hspace="10">
+   ><img src="imagenes/serverlocal.jpg" align="center" height="200" width="300" hspace="10">
  ### -Crear las tablas o colecciones necesarias para el proyecto.
-   ><img src="imagenes/vistas.jpg" align="center" height="500" width="500" hspace="10">
+   ><img src="imagenes/vistas.jpg" align="center" height="200" width="200" hspace="10">
  ### -Ejecutar las consultas realizadas a lo largo de todos los postworks del módulo en el caso de MySQL. En caso de MongoDB, realizar en las siguientes sesiones.
  ### -Guardar las consultas más relevantes como vistas. 
-   ><img src="imagenes/vistas.jpg" align="center" height="500" width="500" hspace="10">
+   ><img src="imagenes/vistas.jpg" align="center" height="200" width="200" hspace="10">
    
  ## 5: Planteamiento del problema 
  ### -Usar como base las preguntas definidas en el Postwork de la Sesión 1, reescribir las consultas usando JSON.
