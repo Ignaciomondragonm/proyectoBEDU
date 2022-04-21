@@ -113,7 +113,19 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
  >- Buscar modelos iguales o superiores del anio 2000, ordenando del mas reciente `FILTER {anio:{$gte:2000}} SORT {anio:-1}` 
  >- Buscar modelos combustible igual a gas y transmision automatica `FILTER {combustible:"gas",transmision:"automatic"} SORT {odometro:-1}`
  >- Buscar modelos entre el anio 200 y 2010, ordenando del mas reciente `FILTER {$and: [{anio: {$gte: 2000}},{anio: {$lte: 2010}}]} SORT {anio:-1}` 
+ >- Ver solo los datos de (region, modelo, precio, fabricante, combustible y odometro) de los años 2000 y 2010, ordenados por el menor a mayor precio 
+    `[{$project: 
+{region:1,modelo:1,precio:1,fabricante:1,combustible:1,odometro:1,anio:1}
+}, {$match:  {$and: [{anio: {$gte: 2000}},{anio: {$lte: 2010}}]}}, {$sort: {
+  precio:1
+}}]`
    
+ >- Mostrar el id, modelo, precio y año, y ordenar del menor precio al año mas reciente `[{$project: 
+{id:1,modelo:1,precio:1,anio:1}
+}, {$sort: {
+  precio:1,
+  anio:-1
+}}]`
  ## 4: Instalación de la base de datos (Configuración de bases de datos locales)
  ### -Instalar el sistema gestor de bases de datos en un equipo (o en la nube en caso de MongoDB).
    ><img src="imagenes/serverlocal.jpg" align="center" height="300" width="400" hspace="10">
