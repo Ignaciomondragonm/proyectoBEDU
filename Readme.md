@@ -9,7 +9,7 @@
 
 Al finalizar el módulo, podrás analizar, definir y consultar conjuntos de datos que provienen de diferentes fuentes y bases de datos tanto relacionales como no relacionales utilizando MySQL y MongoDB con el objetivo de responder preguntas de análisis y resolver problemas sobre el dataset. Además, tus habilidades en MySQL y MongoDB serán suficientes para seguir enriqueciendo tus datasets y análisis. A lo largo del módulo podrás aplicar métodos para limpiar, preparar y combinar datos que faciliten su análisis; y comparar los beneficios y desventajas de utilizar bases de datos relacionales y no relacionales según el proyecto y naturaleza de los datos
 
-### Descripción del proyecto
+### Descripción del proyecto módulo 1
 
 **Contexto**
 >Craigslist es la colección de vehículos usados en venta, este conjunto de datos que incluye todas las entradas de vehículos usados dentro de los Estados Unidos en Craigslist.
@@ -21,4 +21,5 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 
 ### Contenido
 
-- [Proyecto 1: Fundamentos de SQL](Intoduccion_BD/Readme.md) 
+- [Proyecto Modulo 1: Introducción a bases de datos](Intoduccion_BD/Readme.md) 
+- [Proyecto Modulo 2: Programación y estadística con R](Progamacion_Esadistica_R/Readme.md) 
