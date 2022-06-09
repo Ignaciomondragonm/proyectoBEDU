@@ -1,22 +1,22 @@
 
-# Introducción a Bases de Datos
+# Módulo 1: Introducción a Bases de Datos
 
 ## 1: Planteamiento del problema 
 
-<img src="imagenes/bedu.jpg" align="right" height="100" width="100" hspace="10">
+<img src="../img/bedu.jpg" align="right" height="100" width="100" hspace="10">
 <div style="text-align: justify;">
 
 ### - Definir conjunto de datos a trabajar: 
 **Contexto**
 >Craigslist es la colección de vehículos usados en venta, este conjunto de datos que incluye todas las entradas de vehículos usados dentro de los Estados Unidos en Craigslist.
->
+
 **Contenido**
 >Contienen la mayoría de la información relevante que proporciona Craigslist sobre las ventas de automóviles, incluidas columnas como precio, estado, fabricante, latitud/longitud y otras 18 categorías.
 https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 >CSV - https://we.tl/t-fNZjMcxVoB
    
 ### - Dar forma a la base de datos y obtener información relevante.
-><img src="imagenes/punto2.jpg"  height="700" width="700">
+><img src="../img/M1/punto2.jpg"  height="700" width="700">
    
 ### - Definir la forma de uso de los datos y problemas a resolver. 
 >- Forma de uso base de datos no relacional basada en documentos, analisis de informacion, ventas precios, region, etc.
@@ -129,12 +129,12 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 }}]`
  ## 4: Instalación de la base de datos (Configuración de bases de datos locales)
  ### -Instalar el sistema gestor de bases de datos en un equipo (o en la nube en caso de MongoDB).
-   ><img src="imagenes/serverlocal.jpg" align="center" height="300" width="400" hspace="10">
+   ><img src="../img/M1/serverlocal.jpg" align="center" height="300" width="400" hspace="10">
  ### -Crear las tablas o colecciones necesarias para el proyecto.
-   ><img src="imagenes/vistas.jpg" align="center" height="300" width="300" hspace="10">
+   ><img src="../img/M1/vistas.jpg" align="center" height="300" width="300" hspace="10">
  ### -Ejecutar las consultas realizadas a lo largo de todos los postworks del módulo en el caso de MySQL. En caso de MongoDB, realizar en las siguientes sesiones.
  ### -Guardar las consultas más relevantes como vistas. 
-   ><img src="imagenes/vistas.jpg" align="center" height="300" width="300" hspace="10">
+   ><img src="../img/M1/vistas.jpg" align="center" height="300" width="300" hspace="10">
    
 ## 8: Revisión final 
 ### -Revisar todos los retos del módulo, terminar todos los retos faltantes.
@@ -142,5 +142,4 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 ### -Llenar la plantilla para identificar el problema a resolver, analizar cómo resolver.
    
    
-   
-   
+- [Regresar](../Readme.md)

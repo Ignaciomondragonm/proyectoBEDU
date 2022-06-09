@@ -1,27 +1,17 @@
-## Módulo 1: Introducción a Bases de Datos
+# Módulo 2: Programación y estadística con R
 
+## 1: Planteamiento del problema 
+
+<img src="../img/bedu.jpg" align="right" height="100" width="100" hspace="10">
 <div style="text-align: justify;">
 
-### Descripción del módulo 1
+### - Definir conjunto de datos a trabajar: 
+<div style="text-align: justify;">
 
-Al finalizar el módulo, podrás analizar, definir y consultar conjuntos de datos que provienen de diferentes fuentes y bases de datos tanto relacionales como no relacionales utilizando MySQL y MongoDB con el objetivo de responder preguntas de análisis y resolver problemas sobre el dataset. Además, tus habilidades en MySQL y MongoDB serán suficientes para seguir enriqueciendo tus datasets y análisis. A lo largo del módulo podrás aplicar métodos para limpiar, preparar y combinar datos que faciliten su análisis; y comparar los beneficios y desventajas de utilizar bases de datos relacionales y no relacionales según el proyecto y naturaleza de los datos
-
-### Descripción del proyecto módulo 1
-
-**Contexto**
->Craigslist es la colección de vehículos usados en venta, este conjunto de datos que incluye todas las entradas de vehículos usados dentro de los Estados Unidos en Craigslist.
->
-**Contenido**
->Contienen la mayoría de la información relevante que proporciona Craigslist sobre las ventas de automóviles, incluidas columnas como precio, estado, fabricante, latitud/longitud y otras 18 categorías.
->https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
->CSV - https://we.tl/t-fNZjMcxVoB
-  
-## Módulo 2: Programación y estadística con R
-
-### Descripción del módulo 2
+### Descripción
 Realizar tareas de limpieza, manipulación y análisis de bases de datos utilizando el lenguaje de programación R, para después poder crear visualizaciones, predicciones y modelaje matemático, que permitirán transformar datos en información para mejorar la toma decisiones en las organizaciones.
   
-### Descripción del proyecto módulo 1
+### Descripción del proyecto
 
 **Contexto**  
 
@@ -32,7 +22,7 @@ Realizar tareas de limpieza, manipulación y análisis de bases de datos utiliza
 >Este conjunto de datos contiene listados de productos, así como calificaciones de productos y rendimiento de ventas, que no encontrará en otros conjuntos de datos.
 >Con esto, finalmente puede comenzar a buscar correlaciones y patrones con respecto al éxito de un producto y los diversos componentes.
 >https://www.kaggle.com/datasets/jmmvutu/summer-products-and-sales-in-ecommerce-wish
-- [CSV](Progamacion_Estadistica_R/DS/productos-verano-calificación-rendimiento_2020-08.csv) 
+- [CSV](DS/productos-verano-calificación-rendimiento_2020-08.csv) 
 
 **Inspiración**
 
@@ -57,25 +47,6 @@ Básicamente, los productos enumerados en el conjunto de datos son los que apare
 >Una imagen vale mas que mil palabras. En la siguiente captura de pantalla, puede ver algunas características y cómo interpretarlas.
   
   
+  <img src="../img/M2/M2.jpg" width="1000">
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-### Contenido
-
-- [Proyecto Modulo 1: Introducción a bases de datos](Intoduccion_BD/Readme.md) 
-- [Proyecto Modulo 2: Programación y estadística con R](Progamacion_Esadistica_R/Readme.md) 
