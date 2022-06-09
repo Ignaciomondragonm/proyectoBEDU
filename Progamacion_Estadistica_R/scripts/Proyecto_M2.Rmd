@@ -2,10 +2,10 @@
 title: "Proyecto Módulo 2"
 author: "Ignacio Mondragon Moreno"
 date: '2022-06-09'
-output: 
+output:
+  pdf_document: default
   html_document:
-      df_print: paged
-
+    df_print: paged
 ---
 
 # Filas y columnas DF

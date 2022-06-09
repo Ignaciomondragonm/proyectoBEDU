@@ -48,5 +48,9 @@ Básicamente, los productos enumerados en el conjunto de datos son los que apare
   
   
   <img src="../img/M2/M2.jpg" width="1000">
-  
+
+### Contenido
+
+- [Proyecto Modulo 2 - HTML: Scripts](scripts/Proyecto_M2.html)  
+- [Proyecto Modulo 2 - PDF: Scripts](scripts/Proyecto_M2.pdf)  
   
