@@ -3,42 +3,123 @@ title: "Proyecto Módulo 2"
 author: "Ignacio Mondragon Moreno"
 date: '2022-06-09'
 output:
-  pdf_document: default
   html_document:
     df_print: paged
 ---
 
-# Filas y columnas DF
+# carga de fichero local
 
 ```{r}
-df = iris
-df
-# Primeras 2 filas
-head(df,2) 
+product = read.csv("../DS/productos-verano-calificación-rendimiento_2020-08.csv")
+cat = read.csv("../DS/categorias-unicas.csv")
+catOrd = read.csv("../DS/categorias-unicas-ordenadas-recuento.csv")
+
+```
+
+# Filas y columnas DF
+```{r}
+product
+# Primeras 20 filas
+head(product,20) 
 # Ultimas 2 filas
-tail(df,2) 
+tail(product,2) 
 #Estructura del Data Frame
-str(df)
+str(product)
 # Nombres de columnas -> colnames -> rownames ->dimnames"trae filas y columnas"
-names(df)
+names(product)
 #Numero de filas -> ncol -> dim -> numero de filas y columnas 
-nrow(df)
-#Extraer valores de una columna especifica, en un  vector se puede especificar el inicio y termino df$Columna[1:10]
+nrow(product)
+#Extraer valores de una columna especifica, en un  vector se puede especificar el inicio y termino pr$Columna[1:10]
 ```
 
 ## Acceso al DF - Sub-DF
 
 ```{r}
-#Trae de la fila 1 a la 2 y todas las columnas
-df[1:2,]
-#Trae de la fila 1 a la 2 y columnas de la 2 a la 4
-df[1:2,2:4]
+#Trae de la fila 1 a la 2 y todas las columnas -> Trae de la fila 1 a la 2 y columnas de la 2 a la 4 pr[1:2,2:4]
+product[1:2,]
 #Filtrado df[df$Columna == "valor" & df$ColumnaInt>4,]
-df[df$Species == "setosa" & df$Sepal.Width>4,]
+product[product$ID_de_tamano_de_variacion_de_producto == "M" & product$precio>4,]
 #Filtrado genera un sub DF-> Sobre ese solo traer la filas de 1 y 3"c(1,3)" y columna c(2,5)
-df[df$Species == "setosa" & df$Sepal.Width>4,][c(1,3),c(2,5)]
+product[product$ID_de_tamano_de_variacion_de_producto == "M" & product$precio>4,][c(1,3),c(2,5)]
+
 
 ```
+
+## Graficos basicas plot 
+
+```{r primer_plot, fig.cap="Grafico basico usando plot - calificaciones vs paises", fig.align = 'center'}
+conteoCalificaciones = product[['conteo_de_calificacion']]
+paisesEnvio = product[['paises_enviados_a']]
+plot(paisesEnvio,conteoCalificaciones,
+     xlab='Pais',
+     ylab='Calificacion 5', 
+     main='Escala lineal')
+plot(paisesEnvio,conteoCalificaciones,
+     log ='x',
+     xlab='Pais',
+     ylab='Calificacion 5',
+     main='Escala logaritmica',
+     pch=20,
+     col = 'cyan3')
+```
+
+
+## Histograma basico `hist`
+
+```{r primer_hist, fig.cap="Histograma basico calificacion maximas de comerciantes", fig.align = 'center'}
+hist(product$calificacion_del_comerciante,
+     main = "Histograma de calificaciones",
+     col = "cyan3",
+     xlab = "Calificacion",
+     ylab = "Frecuencia")
+```
+
+
+## Diagrama de frecuencias unidimensionales `barplot`
+
+```{r primer_barplot, fig.cap="graficos basicos", fig.align = 'center'}
+# crea un vector con las opciones de envió de los productos y realiza la frecuencia 
+fr = as.vector(product$precio_de_opcion_de_envio)
+barplot(table(fr),
+     main = "Grafico de barras envios",
+     col = c("darkolivegreen1","darkorange1","darkorchid1","firebrick2","gainsboro","darkseagreen1")
+     )
+
+pie(table(fr),
+     main = "Grafico de circular envios",
+     col = c("darkolivegreen1","darkorange1","darkorchid1","firebrick2","gainsboro","darkseagreen1")
+     )
+est = as.vector(product$tiene_banner_de_urgencia)
+
+plot(table(fr,est),
+     main = "Grafico de posaico envios",
+     col = "darkolivegreen1",
+      xlab = "Envio"
+     )
+```
+
+## Boxplots y outliers
+```{r primer_boxplots, fig.align = 'center'}
+library(dplyr)
+library(ggplot2)
+data = read.csv("../DS/productos-verano-calificación-rendimiento_2020-08.csv")
+
+bien <- complete.cases(data)
+data <- data[bien,]
+data <- mutate(data, 
+               ID_de_tamano_de_variacion_de_producto = factor(ID_de_tamano_de_variacion_de_producto), 
+               paises_enviados_a = factor(paises_enviados_a))
+
+
+ggplot(data, 
+       aes(x = ID_de_tamano_de_variacion_de_producto, 
+           y = unidades_vendidas, 
+           fill = paises_enviados_a)) + geom_boxplot() +
+  ggtitle("Boxplots") +
+  xlab("Categorias") +
+  ylab("Mediciones")
+```
+
 
 
 
