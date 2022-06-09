@@ -3,9 +3,12 @@ title: "Proyecto Módulo 2"
 author: "Ignacio Mondragon Moreno"
 date: '2022-06-09'
 output:
+  pdf_document: 
+      latex_engine: xelatex
   html_document:
     df_print: paged
 ---
+% !TEX encoding = UTF-8 Unicode
 
 # carga de fichero local
 
@@ -13,14 +16,13 @@ output:
 product = read.csv("../DS/productos-verano-calificación-rendimiento_2020-08.csv")
 cat = read.csv("../DS/categorias-unicas.csv")
 catOrd = read.csv("../DS/categorias-unicas-ordenadas-recuento.csv")
-
 ```
 
 # Filas y columnas DF
 ```{r}
-product
+
 # Primeras 20 filas
-head(product,20) 
+head(product,2) 
 # Ultimas 2 filas
 tail(product,2) 
 #Estructura del Data Frame
@@ -38,9 +40,9 @@ nrow(product)
 #Trae de la fila 1 a la 2 y todas las columnas -> Trae de la fila 1 a la 2 y columnas de la 2 a la 4 pr[1:2,2:4]
 product[1:2,]
 #Filtrado df[df$Columna == "valor" & df$ColumnaInt>4,]
-product[product$ID_de_tamano_de_variacion_de_producto == "M" & product$precio>4,]
+nrow(product[product$ID_de_tamano_de_variacion_de_producto == "M" & product$precio>4,])
 #Filtrado genera un sub DF-> Sobre ese solo traer la filas de 1 y 3"c(1,3)" y columna c(2,5)
-product[product$ID_de_tamano_de_variacion_de_producto == "M" & product$precio>4,][c(1,3),c(2,5)]
+nrow(product[product$ID_de_tamano_de_variacion_de_producto == "M" & product$precio>4,][c(1,3),c(2,5)])
 
 
 ```
