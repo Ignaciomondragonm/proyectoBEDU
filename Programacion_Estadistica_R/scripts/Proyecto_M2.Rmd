@@ -3,14 +3,14 @@ title: "Proyecto Módulo 2"
 author: "Ignacio Mondragon Moreno"
 date: '2022-06-09'
 output:
+  html_document:
+    theme: cerulean
+    df_print: paged
   pdf_document: 
       latex_engine: xelatex
-  html_document:
-    df_print: paged
 ---
-% !TEX encoding = UTF-8 Unicode
 
-# carga de fichero local
+# Carga de fichero local   
 
 ```{r}
 product = read.csv("../DS/productos-verano-calificación-rendimiento_2020-08.csv")
@@ -19,8 +19,9 @@ catOrd = read.csv("../DS/categorias-unicas-ordenadas-recuento.csv")
 ```
 
 # Filas y columnas DF
-```{r}
 
+```{r}
+product
 # Primeras 20 filas
 head(product,2) 
 # Ultimas 2 filas
@@ -47,7 +48,7 @@ nrow(product[product$ID_de_tamano_de_variacion_de_producto == "M" & product$prec
 
 ```
 
-## Graficos basicas plot 
+## Gráficos básicas plot
 
 ```{r primer_plot, fig.cap="Grafico basico usando plot - calificaciones vs paises", fig.align = 'center'}
 conteoCalificaciones = product[['conteo_de_calificacion']]
@@ -65,8 +66,7 @@ plot(paisesEnvio,conteoCalificaciones,
      col = 'cyan3')
 ```
 
-
-## Histograma basico `hist`
+## Histograma básico `hist`
 
 ```{r primer_hist, fig.cap="Histograma basico calificacion maximas de comerciantes", fig.align = 'center'}
 hist(product$calificacion_del_comerciante,
@@ -75,7 +75,6 @@ hist(product$calificacion_del_comerciante,
      xlab = "Calificacion",
      ylab = "Frecuencia")
 ```
-
 
 ## Diagrama de frecuencias unidimensionales `barplot`
 
@@ -101,6 +100,7 @@ plot(table(fr,est),
 ```
 
 ## Boxplots y outliers
+
 ```{r primer_boxplots, fig.align = 'center'}
 library(dplyr)
 library(ggplot2)
@@ -120,6 +120,28 @@ ggplot(data,
   ggtitle("Boxplots") +
   xlab("Categorias") +
   ylab("Mediciones")
+```
+
+## Lineas de tiempo 
+
+```{r  primer_timeline, fig.align = 'center'}
+library(TSA)
+
+tunidadesv = ts(product[,'unidades_vendidas'], start = 1958, frequency = 12)
+
+# Indicar la periodicidad de los datos
+plot(tunidadesv)
+# Modelar rápidamente mi serie de tiempo para sacar ciclos, tendencia, aleatorios y estacionalidad
+ModeloSerieComputadoras = decompose(tunidadesv)
+# FORMA GRAFICA
+plot(ModeloSerieComputadoras,
+     xlab = "Tiempo mensualizado")
+# FORMA DE TABLA O NUMERICA
+tend = ModeloSerieComputadoras$trend
+estacion = ModeloSerieComputadoras$seasonal
+aleatorio = ModeloSerieComputadoras$random
+
+
 ```
 
 
