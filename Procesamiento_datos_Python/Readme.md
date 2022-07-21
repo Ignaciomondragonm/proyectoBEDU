@@ -12,6 +12,7 @@
 **Contenido**
 >Contienen la mayoría de la información relevante que proporciona Craigslist sobre las ventas de automóviles, incluidas columnas como precio, estado, fabricante, latitud/longitud y otras 18 categorías.
 https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
->CSV - https://we.tl/t-fNZjMcxVoB
 
 ### Contenido
+
+- [Proyecto Modulo 3 - python](scripts/ProyectoM3.ipynb)  
