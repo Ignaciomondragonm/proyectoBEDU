@@ -22,7 +22,7 @@ Realizar tareas de limpieza, manipulación y análisis de bases de datos utiliza
 >Este conjunto de datos contiene listados de productos, así como calificaciones de productos y rendimiento de ventas, que no encontrará en otros conjuntos de datos.
 >Con esto, finalmente puede comenzar a buscar correlaciones y patrones con respecto al éxito de un producto y los diversos componentes.
 >https://www.kaggle.com/datasets/jmmvutu/summer-products-and-sales-in-ecommerce-wish
-- [CSV](DS/productos-verano-calificación-rendimiento_2020-08.csv) 
+- [CSV](../DS/productos-verano-calificación-rendimiento_2020-08.csv) 
 
 **Inspiración**
 
