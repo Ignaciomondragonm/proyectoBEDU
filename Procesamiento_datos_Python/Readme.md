@@ -15,4 +15,4 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 
 ### Contenido
 
-- [Proyecto Modulo 3 - python](scripts/ProyectoM3.ipynb)  
+- [Proyecto Modulo 3 - python](ProyectoM3.ipynb)  
