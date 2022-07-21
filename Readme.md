@@ -11,7 +11,7 @@
 
 <div style="text-align: justify;">
 
-### Descripción del proyecto módulo 1
+### Descripción del proyecto módulo 2
 
 **Contexto**  
 
@@ -19,6 +19,16 @@
 >Este conjunto de datos contiene listados de productos, así como calificaciones de productos y rendimiento de ventas, que no encontrará en otros conjuntos de datos.
 >Con esto, finalmente puede comenzar a buscar correlaciones y patrones con respecto al éxito de un producto y los diversos componentes.
   
+## Módulo 3: Procesamiento de datos con Python
+
+<div style="text-align: justify;">
+
+### Descripción del proyecto módulo 2
+
+**Contexto**  
+
+>Utilizar Python para crear rutinas y scripts que permitan automatizar la obtención, limpieza, procesamiento y transformación datos provenientes de diferentes fuentes y formatos como: archivos locales, APIs y Bases de Datos externas con el fin de tener data en condiciones óptimas para su futuro análisis y visualización.
+
 
 ### Contenido
 
