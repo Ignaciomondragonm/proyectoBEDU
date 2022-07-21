@@ -23,7 +23,7 @@
 
 <div style="text-align: justify;">
 
-### Descripción del proyecto módulo 2
+### Descripción del proyecto módulo 3
 
 **Contexto**  
 
