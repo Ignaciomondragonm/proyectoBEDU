@@ -2,7 +2,7 @@
 
 <div style="text-align: justify;">
 
-### DDDDDescripción del proyecto módulo 1
+### Descripción del proyecto módulo 1
 
 >Craigslist es la colección de vehículos usados en venta, este conjunto de datos que incluye todas las entradas de vehículos usados dentro de los Estados Unidos en Craigslist.
 
