@@ -37,10 +37,3 @@ Se instalan al recontruir el proyecto
   
  https://www.mongodb.com/try/download/compass
  
- ## Comandos basicos Git 
-
-git add . !!Agregar cambios 
-
-git commit -m "mensae del coommit" !!Agregar commit a los cambios, se recomienda que el mensaje del commit seareferente y claro a los cambios realizados 
-
-git push !! sube los cambios a repositorio remoto, si se esta trabajando en ramas posiblemnete arroje un error ejecute el comando que viene en el error 
