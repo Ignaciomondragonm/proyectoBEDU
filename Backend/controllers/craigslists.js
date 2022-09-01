@@ -3,7 +3,7 @@ const Craigslist = require('../models/craigslist');
 
 
 const getCraigslists = async(req, res = response) => {
-    const craigslist = await Craigslist.find().sort({}).limit(2000);
+    const craigslist = await Craigslist.find().sort({}).limit(20000);
     res.json({
         ok: true,
         craigslist
