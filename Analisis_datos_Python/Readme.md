@@ -15,9 +15,6 @@ https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 
 ## BD 2: Planteamiento del problema 
 
-<img src="../img/bedu.jpg" align="right" height="100" width="100" hspace="10">
-<div style="text-align: justify;">
-
 ### - Definir conjunto de datos a trabajar: 
 <div style="text-align: justify;">
   
