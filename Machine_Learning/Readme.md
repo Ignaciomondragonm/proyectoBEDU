@@ -6,17 +6,11 @@
 <div style="text-align: justify;">
 
 ### - Definir conjunto de datos a trabajar: 
-- Venta de carros
-- Mall_Customers.csv (membresías)
-- Position_Salaries.csv (posicion salarial)
-- Social_Network_Ads.csv (compras de clientes)
 
-
-- [Venta de carros - Proyecto API local]
+- Venta de carros - Proyecto API local carpeta (../Backend)
 - [Membresías - Mall_Customers.csv](Mall_Customers.csv) 
 - [Posicion salarial - Position_Salaries.csv](Position_Salaries.csv) 
 - [Compras de clientes - Social_Network_Ads.csv](Social_Network_Ads.csv) 
-
 
 ### Contenido
 
