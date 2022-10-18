@@ -11,8 +11,6 @@
 - Position_Salaries.csv (posicion salarial)
 - Social_Network_Ads.csv (compras de clientes)
 
-<img src="../img/M2/M2.jpg" width="1000">
-
 ### Contenido
 
 - [Análisis - ProyectoM5.ipynb](ProyectoM5.ipynb) 
