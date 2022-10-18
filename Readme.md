@@ -40,6 +40,15 @@
 >En módulo podrás realizar análisis profundos, manipulación, transformación y extracción de información de bases de datos para responder preguntas a problemas reales. Podrás obtener insights y generar múltiples visualizaciones que permitan comunicar diferentes conclusiones sobre la naturaleza y comportamiento de los datos; tomar decisiones inteligentes basadas en data. Además, podrás aplicar modelos de regresión y clasificación con Pandas para estar listo y dar el siguiente paso hacia la aplicación de modelos de Machine Learning.
 
 
+### Módulo 4: Machine Learning
+<div style="text-align: justify;">
+
+### Descripción del proyecto módulo 5
+
+**Contexto**  
+
+>Identificar, seleccionar, construir e implementar algoritmos de Machine Learning con Python, con el objetivo de identificar si un problema amerita utilizar Machine Learning, seleccionar el mejor algoritmo, construirlo, implementarlo y probar su eficacia.
+
 ### Contenido
 
 - [Proyecto Modulo 1: Introducción a bases de datos](Intoduccion_BD/Readme.md) 
